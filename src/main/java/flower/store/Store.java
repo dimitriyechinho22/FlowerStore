@@ -2,11 +2,14 @@ package flower.store;
 
 import java.util.ArrayList;
 import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter @Setter
 public class Store {
 
 
-    List<FlowerBucket> flowerBuckets = new ArrayList<>();
+    private List<FlowerBucket> flowerBuckets = new ArrayList<>();
 
     public void add(final FlowerBucket flowerBucket) {
         flowerBuckets.add(flowerBucket);
@@ -15,7 +18,7 @@ public class Store {
     {
         for (FlowerBucket f : flowerBuckets)
         {
-            if(f.equals(bucket))
+            if (f.equals(bucket))
             {
                 return true;
             }

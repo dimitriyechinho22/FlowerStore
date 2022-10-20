@@ -5,17 +5,17 @@ import java.util.List;
 
 public class FlowerBucket {
 
-    private List<FlowerPack> PackList = new ArrayList<FlowerPack>();
+    private List<FlowerPack> pack = new ArrayList<FlowerPack>();
 
     public void add(final FlowerPack flowerPack) {
-        PackList.add(flowerPack);
+        pack.add(flowerPack);
     }
     public double getPrice()
     {
         double price = 0;
-        for (FlowerPack flowerPack: PackList)
+        for (FlowerPack flowerPack: pack)
         {
-            price+= flowerPack.getPrice();
+            price += flowerPack.getPrice();
         }
         return price;
     }
