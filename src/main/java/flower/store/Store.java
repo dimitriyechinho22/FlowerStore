@@ -3,10 +3,11 @@ package flower.store;
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter @Setter
 public class Store {
 
 
-    List<FlowerBucket> flowerBuckets = new ArrayList<>();
+    private List<FlowerBucket> flowerBuckets = new ArrayList<>();
 
     public void add(final FlowerBucket flowerBucket) {
         flowerBuckets.add(flowerBucket);
