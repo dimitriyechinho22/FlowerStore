@@ -8,7 +8,7 @@ public class FlowerBucket {
     private List<FlowerPack> PackList = new ArrayList<FlowerPack>();
 
     public void add(final FlowerPack flowerPack) {
-        this.PackList.add(flowerPack);
+        PackList.add(flowerPack);
     }
     public double getPrice()
     {
