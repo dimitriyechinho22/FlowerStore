@@ -10,14 +10,14 @@ import lombok.ToString;
 public class FlowerPack {
     private Flower flower;
     private int quantity;
-    
+
     public FlowerPack(final Flower flowerer, final int quantity) {
         this.flower = flowerer;
         this.quantity = quantity;
     }
-    
+
     public double getPrice(){
-        return quantity * flower.getPrice();
+        return this.quantity * this.flower.getPrice();
     }
 
 

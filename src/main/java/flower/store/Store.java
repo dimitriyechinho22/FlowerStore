@@ -7,6 +7,10 @@ public class Store {
 
 
     List<FlowerBucket> flowerBuckets = new ArrayList<>();
+
+    public void add(final FlowerBucket flowerBucket) {
+        flowerBuckets.add(flowerBucket);
+    }
     public boolean search(FlowerBucket bucket)
     {
         for (FlowerBucket f : flowerBuckets)
