@@ -15,7 +15,7 @@ public class Store {
     {
         for (FlowerBucket f : flowerBuckets)
         {
-            if(f.equals(bucket))
+            if (f.equals(bucket))
             {
                 return true;
             }
